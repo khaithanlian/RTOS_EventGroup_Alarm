@@ -1,0 +1,15 @@
+idf_component_register(
+    SRCS
+        "main.c"
+        "board.c"
+        "alarm.c"
+        "button.c"
+        "event_controller.c"
+        "light_sensor.c"
+        "pir.c"
+    INCLUDE_DIRS
+        "."
+    REQUIRES
+        esp_driver_gpio
+        esp_adc
+)
